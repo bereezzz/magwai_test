@@ -1,0 +1,745 @@
+
+$bgColor: #131313;;
+
+body, header, footer {
+    background-color: $bgColor;
+  
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+// Шапка на компы
+.header{
+    width: 100vw;
+    padding: 28px 100px;
+   
+}
+.burgerButton{
+    display: none;
+}
+
+.navbar{
+    display: none;
+}
+
+////////////////////////////////
+.main-menu{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    margin-right: 76px;
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    gap:20px;
+    width: 100%;
+   
+}
+
+.menu-link {
+    text-transform: uppercase;
+    text-decoration: none; 
+    white-space: nowrap;
+    color: #FFF;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    
+}
+.phoneBlock{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.phoneIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 60px;
+    flex-shrink: 0;
+    transform: skewX(-16deg);
+    border: #FFF solid 1px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.buttonPhone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 282.5px;
+    height: 60px;
+    background-color:#C2AB81;
+    flex-shrink: 0;
+    transform: skewX(-16deg);
+    margin-right: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: #ffd586;
+        color: #262626;
+      } 
+   
+}
+.textButtonPhone{
+    text-transform: uppercase;
+    text-decoration: none; 
+    white-space: nowrap;
+    color: #FFF;
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    transform: skewX(16deg);
+    line-height: 150%; /* 21px */
+}
+.parallelogram{
+    width: 8px;
+    height: 60px;
+    flex-shrink: 0;
+    background-color:#FFF;
+    transform: skewX(-16deg);
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Промежуток между карточками */
+    justify-content: center;
+ 
+}
+// Тело сайта
+.backgroundImage{
+    width: 100vw;
+    height: 960px;
+    display: flex;
+    align-items: end;
+    flex-shrink: 0;
+    border-radius: 60px 60px 0px 0px;
+    background: url("./images/Rectangle\ 5.png"), lightgray 0px -634.922px / 100% 278.474% no-repeat;
+    // background: url("./images/Rectangle\ 5.png"), lightgray 50% / cover no-repeat;
+}
+
+.pTextHeadingForm{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    opacity: 0.79;
+
+}
+.headingForm{
+    background: linear-gradient(0deg, #131313 0%, rgba(19, 19, 19, 0.00) 100%);
+    width: 100%;
+    height: 520px;
+    flex-shrink: 0;
+    padding: 158px 0px 96px 100px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.h1Text{
+    //width: 686px;
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.pText{
+    margin: 0px;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+}
+.btnUnderForm{
+    display: flex;
+}
+//Карточки
+.title{
+    color: #FFF;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.cardsBlock{
+    padding: 100px;
+}
+.card{
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    height: 621px;;
+
+}
+.imgCard{
+    width: 100%;
+    height: 185px;
+    max-width: 100%;
+    max-height: 100%;
+    display: block; 
+}
+.titleCard{
+    color: #171717;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 185.714% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.continueBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    flex-shrink: 0;
+    background: #171717;
+    color: #FFF;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+.bodyCard{
+    background: #FFF;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 30px 24px;
+    height: 436px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: space-between;
+    justify-content: space-between;
+}
+.divContinueBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3Element{
+    color: #171717;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 185.714% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin:0px
+}
+
+.h4Element{
+    color: #171717;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+    margin:0px
+}
+.p1Element{
+    color: #666;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Максимальное количество строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.p2Element{
+    color: #666;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+}
+.download{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+//  ipad
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
+    /* шапка */
+    .main-menu{
+        gap:91px;
+    }
+    .header{
+        width: 100vw;
+        padding: 28px 50px;
+    }
+    .menu-list { 
+        display: none;
+    }
+    .icon{
+        margin-right: 0px;
+       
+    }
+    // тело
+    .headingForm{
+        padding: 124px 0px 76px 50px;
+    }
+    .pTextHeadingForm{
+        max-width: 447px;
+
+    }
+    .buttonPhone{
+        width: 201px;
+    }
+    //картинка
+    .backgroundImage{
+        background-size: cover; 
+        background-position: center; 
+        height: 907px;
+    }
+    //бургер
+    .container {
+       // width: 100vw;
+        margin: auto;
+      }
+      
+      .navbar {
+        width: 100%;
+        visibility: visible;
+        display: block;
+      }
+      
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+      }
+      
+      .navbar .menu-items {
+        display: flex;
+      
+      }
+      
+      .navbar .nav-container li {
+        list-style: none;
+      }
+      
+      ///текст для бургера
+      .navbar .nav-container a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%; 
+      }
+      
+      .navbar .nav-container a:hover{
+          font-weight: bolder;
+      }
+      
+      .nav-container {
+        display: block;
+        position: relative;
+        height: 60px;
+      }
+      
+      .nav-container .checkbox {
+        position: absolute;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        left: 20px;
+        z-index: 15;
+        opacity: 0;
+        cursor: pointer;
+        
+      }
+      
+      .nav-container .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        z-index: 11;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .nav-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #fff;
+      }
+      
+      .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      ///полотно (фон)
+      .navbar .menu-items {
+        padding-top: 120px;
+        position: absolute;
+        background-color: $bgColor;
+        height: 100vh;
+        width: 100vw;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -50px;
+        padding-left: 50px;
+        margin-top: -24px;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+        z-index: 10;
+        
+      }
+      
+      .navbar .menu-items li {
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    
+      .nav-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+      
+    /////////// Карточки
+    .cardsBlock{
+        padding: 40px;
+    }
+
+}
+//  iphone
+@media screen and (max-width: 768px) {
+    /* шапка*/
+    .h1Text{
+        font-size: 20px;
+    }
+    .pText{
+        font-size: 14px;
+
+    }
+    .main-menu{
+        justify-content: space-between;
+    }
+    .header{
+        width: 100vw;
+        padding: 20px 15px;
+    }
+    .menu-list { 
+        display: none;
+    }
+    .phoneBlock{
+        display: none;
+    }
+    .burger{
+        display:flex;
+    }
+    .icon{
+        margin-right: 0px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        padding-right: 10px;
+    }
+    .buttonPhoneipad{
+        width: 220px;
+    }
+    ///картинка
+    .backgroundImage{
+
+        height: 495px;
+        background-size: cover; 
+        background-position: center; 
+    }
+    .headingForm{
+        padding: 52px 0px 52px 14px;
+        height: auto;
+    }
+    .pTextHeadingForm{
+        max-width: 293px;
+
+    }
+
+    ///карточки
+    .cardsBlock{
+        padding: 15px;
+    }
+    //бургер
+    .container {
+        // width: 100vw;
+         margin: auto;
+       }
+       
+       .navbar {
+         width: 100%;
+         visibility: visible;
+         display: block;
+       }
+       
+       .nav-container {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         height: 62px;
+       }
+       
+       .navbar .menu-items {
+         display: flex;
+       }
+       
+       .navbar .nav-container li {
+         list-style: none;
+       }
+       
+       ///текст для бургера
+       .navbar .nav-container a {
+         text-decoration: none;
+         color: #fff;
+         font-size: 20px;
+         font-style: normal;
+         font-weight: 700;
+         line-height: 150%;
+       }
+       
+       .navbar .nav-container a:hover{
+           font-weight: bolder;
+       }
+       
+       .nav-container {
+         display: block;
+         position: relative;
+         height: 60px;
+       }
+       
+       .nav-container .checkbox {
+         position: absolute;
+         display: block;
+         height: 32px;
+         width: 32px;
+         top: 20px;
+         left: 20px;
+         z-index: 15;
+         opacity: 0;
+         cursor: pointer;
+         
+       }
+       
+       .nav-container .hamburger-lines {
+         display: block;
+         height: 26px;
+         width: 32px;
+         z-index: 11;
+         position: absolute;
+         top: 17px;
+         left: 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+       }
+       
+       .nav-container .hamburger-lines .line {
+         display: block;
+         height: 4px;
+         width: 100%;
+         border-radius: 10px;
+         background: #fff;
+       }
+       
+       .nav-container .hamburger-lines .line1 {
+         transform-origin: 0% 0%;
+         transition: transform 0.4s ease-in-out;
+       }
+       
+       .nav-container .hamburger-lines .line2 {
+         transition: transform 0.2s ease-in-out;
+       }
+       
+       .nav-container .hamburger-lines .line3 {
+         transform-origin: 0% 100%;
+         transition: transform 0.4s ease-in-out;
+       }
+       
+       ///полотно (фон)
+       .navbar .menu-items {
+         padding-top: 120px;
+         position: absolute;
+         background-color: $bgColor;
+         height: 100vh;
+         width: 100vw;
+         transform: translate(-150%);
+         display: flex;
+         flex-direction: column;
+         margin-left: -15px;
+         padding-left: 50px;
+         margin-top: 10px;
+         transition: transform 0.5s ease-in-out;
+         text-align: center;
+         z-index: 10;
+         
+       }
+       
+       .navbar .menu-items li {
+         margin-bottom: 1.2rem;
+         font-size: 1.5rem;
+         font-weight: 500;
+       }
+     
+       .nav-container input[type="checkbox"]:checked ~ .menu-items {
+         transform: translateX(0);
+       }
+       
+       .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+         transform: rotate(45deg);
+       }
+       
+       .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+         transform: scaleY(0);
+       }
+       
+       .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+         transform: rotate(-45deg);
+       }
+       .burgerButton{
+        
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 12px
+    }
+    .buttonPhone{
+        width: 100%;
+    }
+    .phoneIcon{
+        width: 100%;
+    }
+
+}
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display:  none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background: #131313;
+    color: #C2AB81;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  }
+  
+  .popup h2 {
+    color: #C2AB81;
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    background-color: #C2AB81;
+    color: #131313;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .closeButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #C2AB81;
+    color: #131313;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+        background-color: #F4EFE6;
+        color: #262626;
+      }
+  }
+.submitButton{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #C2AB81;
+    color: #131313;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+        background-color: #F4EFE6;
+        color: #262626;
+      }
+}
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.blockButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px
+}
