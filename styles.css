@@ -270,7 +270,9 @@ body, header, footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  padding-left: 30px;
+  padding-right: 30px; }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* шапка */
@@ -444,7 +446,7 @@ body, header, footer {
   .navbar .navContainer a {
     text-decoration: none;
     color: #131313;
-    font-size: 30px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
