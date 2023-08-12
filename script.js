@@ -32,8 +32,7 @@ loadMoreButton.addEventListener("click", function () {
       const cardElement = createCardElement(card);
       cardsContainer.appendChild(cardElement);
     });
-  }
-  else if (currentIndex === 6) {
+  } else if (currentIndex === 6) {
     savedCardsData["6"].forEach((card) => {
       const cardElement = createCardElement(card);
       cardsContainer.appendChild(cardElement);
@@ -89,44 +88,48 @@ function createCardElement(cardData) {
   return cardElement;
 }
 ///ФОРМА
-const openPopupButton = document.getElementById('openPopupButton');
-const openPopupButtonMobile = document.getElementById('openPopupButtonMobile');
-const openPopupButtonImg = document.getElementById('openPopupButtonImg')
-const closePopupButton = document.getElementById('closePopupButton');
-const popupOverlay = document.getElementById('popupOverlay');
+const openPopupButton = document.getElementById("openPopupButton");
+const openPopupButtonMobile = document.getElementById("openPopupButtonMobile");
+const openPopupButtonImg = document.getElementById("openPopupButtonImg");
+const closePopupButton = document.getElementById("closePopupButton");
+const popupOverlay = document.getElementById("popupOverlay");
 
-openPopupButton.addEventListener('click', function() {
-  popupOverlay.style.display = 'flex';
+openPopupButton.addEventListener("click", function () {
+  popupOverlay.style.display = "flex";
 });
-openPopupButtonImg.addEventListener('click', function() {
-  popupOverlay.style.display = 'flex';
+openPopupButtonImg.addEventListener("click", function () {
+  popupOverlay.style.display = "flex";
 });
-openPopupButtonMobile.addEventListener('click', function() {
-  popupOverlay.style.display = 'flex';
+openPopupButtonMobile.addEventListener("click", function () {
+  popupOverlay.style.display = "flex";
 });
 
-closePopupButton.addEventListener('click', function() {
-  popupOverlay.style.display = 'none';
+closePopupButton.addEventListener("click", function () {
+  popupOverlay.style.display = "none";
 });
 
 // Валидация формы
-document.addEventListener('DOMContentLoaded', function() {
-  var form = document.getElementById('myForm');
-  var nameInput = document.getElementById('nameInput');
-  var emailInput = document.getElementById('emailInput');
-  var messageInput = document.getElementById('messageInput');
+document.addEventListener("DOMContentLoaded", function () {
+  var form = document.getElementById("myForm");
+  var nameInput = document.getElementById("nameInput");
+  var emailInput = document.getElementById("emailInput");
+  var messageInput = document.getElementById("messageInput");
 
-  form.addEventListener('submit', function(event) {
+  form.addEventListener("submit", function (event) {
     event.preventDefault(); // Предотвращаем отправку формы по умолчанию
 
     // Простая валидация на пустые поля
-    if (!nameInput.value.trim() || !emailInput.value.trim() || !messageInput.value.trim()) {
-      alert('Заполните все поля!');
+    if (
+      !nameInput.value.trim() ||
+      !emailInput.value.trim() ||
+      !messageInput.value.trim()
+    ) {
+      alert("Заполните все поля!");
     } else if (!isValidEmail(emailInput.value)) {
-      alert('Введите корректный Email!');
+      alert("Введите корректный Email!");
     } else {
       // Ваш код для обработки успешной отправки формы
-      alert('Форма успешно отправлена!');
+      alert("Форма успешно отправлена!");
     }
   });
 
