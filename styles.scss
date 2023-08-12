@@ -4,6 +4,8 @@ $bgColor: #131313;;
 body, header, footer {
     background-color: $bgColor;
     margin: 0;
+    scrollbar-color: #999 $bgColor; 
+    scrollbar-width: thin;
 }
 *{
     box-sizing: border-box;
@@ -720,10 +722,15 @@ body, header, footer {
     margin-bottom: 10px;
     border-radius: 5px;
   }
-  
+  .divCloseBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .closeButton {
-    margin-top: 10px;
-    padding: 5px 10px;
+    width: 95px;
+    padding:10px;
     background: #C2AB81;
     color: #131313;
     border: none;
@@ -733,10 +740,11 @@ body, header, footer {
         background-color: #F4EFE6;
         color: #262626;
       }
+      
   }
 .submitButton{
+    width: 95px;
     margin-top: 10px;
-    padding: 5px 10px;
     background: #C2AB81;
     color: #131313;
     border: none;
@@ -771,5 +779,6 @@ body, header, footer {
   }
 
   ::-webkit-scrollbar-track {
-    background-color: #f1f1f1; 
+    background-color: $bgColor; 
   }
+  

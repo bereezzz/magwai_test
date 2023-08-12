@@ -1,7 +1,9 @@
 @charset "UTF-8";
 body, header, footer {
   background-color: #131313;
-  margin: 0; }
+  margin: 0;
+  scrollbar-color: #999 #131313;
+  scrollbar-width: thin; }
 
 * {
   box-sizing: border-box;
@@ -566,9 +568,15 @@ form button {
   margin-bottom: 10px;
   border-radius: 5px; }
 
+.divCloseBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .closeButton {
-  margin-top: 10px;
-  padding: 5px 10px;
+  width: 95px;
+  padding: 10px;
   background: #C2AB81;
   color: #131313;
   border: none;
@@ -579,8 +587,8 @@ form button {
     color: #262626; }
 
 .submitButton {
+  width: 95px;
   margin-top: 10px;
-  padding: 5px 10px;
   background: #C2AB81;
   color: #131313;
   border: none;
@@ -610,4 +618,4 @@ form button {
   border-radius: 8px; }
 
 ::-webkit-scrollbar-track {
-  background-color: #f1f1f1; }
+  background-color: #131313; }
