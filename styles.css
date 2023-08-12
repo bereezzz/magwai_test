@@ -8,7 +8,6 @@ body, header, footer {
   font-family: 'Montserrat', sans-serif; }
 
 .header {
-  width: 100vw;
   padding: 28px 100px; }
 
 .burgerButton {
@@ -107,7 +106,6 @@ body, header, footer {
   justify-content: center; }
 
 .backgroundImage {
-  width: 100vw;
   height: 960px;
   display: flex;
   align-items: end;
