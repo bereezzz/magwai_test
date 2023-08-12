@@ -24,14 +24,14 @@ body, header, footer {
 }
 
 ////////////////////////////////
-.main-menu{
+.mainMenu{
     display: flex;
     align-items: center;
 }
 .icon{
     margin-right: 76px;
 }
-.menu-list {
+.menuList {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@ body, header, footer {
    
 }
 
-.menu-link {
+.menuLink {
     text-transform: uppercase;
     text-decoration: none; 
     white-space: nowrap;
@@ -52,6 +52,9 @@ body, header, footer {
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 21px */
+    &:hover{
+        color: #bebebe;
+    }
     
 }
 .phoneBlock{
@@ -285,14 +288,14 @@ body, header, footer {
 //  ipad
 @media screen and (min-width: 769px) and (max-width: 1024px)  {
     /* шапка */
-    .main-menu{
+    .mainMenu{
         gap:91px;
     }
     .header{
         width: 100vw;
         padding: 28px 50px;
     }
-    .menu-list { 
+    .menuList { 
         display: none;
     }
     .icon{
@@ -328,43 +331,47 @@ body, header, footer {
         display: block;
       }
       
-      .nav-container {
+      .navContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 62px;
       }
       
-      .navbar .menu-items {
+      .navbar .menuItems {
         display: flex;
       
       }
       
-      .navbar .nav-container li {
+      .navbar .navContainer li {
         list-style: none;
       }
       
       ///текст для бургера
-      .navbar .nav-container a {
+      .navbar .navContainer a {
         text-decoration: none;
-        color: #fff;
-        font-size: 36px;
+        color: $bgColor;
+        font-size: 42px;
         font-style: normal;
         font-weight: 700;
         line-height: 150%; 
+        -webkit-text-stroke: 0.1px #808080; 
+        &:hover{
+            -webkit-text-stroke: 0.1px #FFF; 
+        }
       }
       
-      .navbar .nav-container a:hover{
+      .navbar .navContainer a:hover{
           font-weight: bolder;
       }
       
-      .nav-container {
+      .navContainer {
         display: block;
         position: relative;
         height: 60px;
       }
       
-      .nav-container .checkbox {
+      .navContainer .checkbox {
         position: absolute;
         display: block;
         height: 32px;
@@ -377,7 +384,7 @@ body, header, footer {
         
       }
       
-      .nav-container .hamburger-lines {
+      .navContainer .hamburgerLines {
         display: block;
         height: 26px;
         width: 32px;
@@ -390,7 +397,7 @@ body, header, footer {
         justify-content: space-between;
       }
       
-      .nav-container .hamburger-lines .line {
+      .navContainer .hamburgerLines .line {
         display: block;
         height: 4px;
         width: 100%;
@@ -398,22 +405,22 @@ body, header, footer {
         background: #fff;
       }
       
-      .nav-container .hamburger-lines .line1 {
+      .navContainer .hamburgerLines .line1 {
         transform-origin: 0% 0%;
         transition: transform 0.4s ease-in-out;
       }
       
-      .nav-container .hamburger-lines .line2 {
+      .navContainer .hamburgerLines .line2 {
         transition: transform 0.2s ease-in-out;
       }
       
-      .nav-container .hamburger-lines .line3 {
+      .navContainer .hamburgerLines .line3 {
         transform-origin: 0% 100%;
         transition: transform 0.4s ease-in-out;
       }
       
       ///полотно (фон)
-      .navbar .menu-items {
+      .navbar .menuItems {
         padding-top: 120px;
         position: absolute;
         background-color: $bgColor;
@@ -429,27 +436,29 @@ body, header, footer {
         text-align: center;
         z-index: 10;
         
+        
       }
       
-      .navbar .menu-items li {
+      .navbar .menuItems li {
         margin-bottom: 1.2rem;
         font-size: 1.5rem;
         font-weight: 500;
       }
+
     
-      .nav-container input[type="checkbox"]:checked ~ .menu-items {
+      .navContainer input[type="checkbox"]:checked ~ .menuItems {
         transform: translateX(0);
       }
       
-      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      .navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line1 {
         transform: rotate(45deg);
       }
       
-      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      .navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line2 {
         transform: scaleY(0);
       }
       
-      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      .navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line3 {
         transform: rotate(-45deg);
       }
       
@@ -469,14 +478,14 @@ body, header, footer {
         font-size: 14px;
 
     }
-    .main-menu{
+    .mainMenu{
         justify-content: space-between;
     }
     .header{
         width: 100vw;
         padding: 20px 15px;
     }
-    .menu-list { 
+    .menuList { 
         display: none;
     }
     .phoneBlock{
@@ -528,42 +537,46 @@ body, header, footer {
          display: block;
        }
        
-       .nav-container {
+       .navContainer {
          display: flex;
          justify-content: space-between;
          align-items: center;
          height: 62px;
        }
        
-       .navbar .menu-items {
+       .navbar .menuItems {
          display: flex;
        }
        
-       .navbar .nav-container li {
+       .navbar .navContainer li {
          list-style: none;
        }
        
        ///текст для бургера
-       .navbar .nav-container a {
+       .navbar .navContainer a {
          text-decoration: none;
-         color: #fff;
-         font-size: 20px;
+         color: $bgColor;
+         font-size: 30px;
          font-style: normal;
          font-weight: 700;
          line-height: 150%;
+         -webkit-text-stroke: 0.1px #808080; 
+        &:hover{
+            -webkit-text-stroke: 0.1px #FFF; 
+        }
        }
        
-       .navbar .nav-container a:hover{
+       .navbar .navContainer a:hover{
            font-weight: bolder;
        }
        
-       .nav-container {
+       .navContainer {
          display: block;
          position: relative;
          height: 60px;
        }
        
-       .nav-container .checkbox {
+       .navContainer .checkbox {
          position: absolute;
          display: block;
          height: 32px;
@@ -576,7 +589,7 @@ body, header, footer {
          
        }
        
-       .nav-container .hamburger-lines {
+       .navContainer .hamburgerLines {
          display: block;
          height: 26px;
          width: 32px;
@@ -589,7 +602,7 @@ body, header, footer {
          justify-content: space-between;
        }
        
-       .nav-container .hamburger-lines .line {
+       .navContainer .hamburgerLines .line {
          display: block;
          height: 4px;
          width: 100%;
@@ -597,22 +610,22 @@ body, header, footer {
          background: #fff;
        }
        
-       .nav-container .hamburger-lines .line1 {
+       .navContainer .hamburgerLines .line1 {
          transform-origin: 0% 0%;
          transition: transform 0.4s ease-in-out;
        }
        
-       .nav-container .hamburger-lines .line2 {
+       .navContainer .hamburgerLines .line2 {
          transition: transform 0.2s ease-in-out;
        }
        
-       .nav-container .hamburger-lines .line3 {
+       .navContainer .hamburgerLines .line3 {
          transform-origin: 0% 100%;
          transition: transform 0.4s ease-in-out;
        }
        
        ///полотно (фон)
-       .navbar .menu-items {
+       .navbar .menuItems {
          padding-top: 120px;
          position: absolute;
          background-color: $bgColor;
@@ -630,25 +643,25 @@ body, header, footer {
          
        }
        
-       .navbar .menu-items li {
+       .navbar .menuItems li {
          margin-bottom: 1.2rem;
          font-size: 1.5rem;
          font-weight: 500;
        }
      
-       .nav-container input[type="checkbox"]:checked ~ .menu-items {
+       .navContainer input[type="checkbox"]:checked ~ .menuItems {
          transform: translateX(0);
        }
        
-       .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+       .navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line1 {
          transform: rotate(45deg);
        }
        
-       .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+       .navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line2 {
          transform: scaleY(0);
        }
        
-       .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+       .navContainer input[type="checkbox"]:checked ~ .hamburgerLines .line3 {
          transform: rotate(-45deg);
        }
        .burgerButton{

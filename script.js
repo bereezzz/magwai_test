@@ -90,7 +90,8 @@ function createCardElement(cardData) {
 }
 ///ФОРМА
 const openPopupButton = document.getElementById('openPopupButton');
-const openPopupButtonImg = document.getElementById('openPopupButtonImg');
+const openPopupButtonMobile = document.getElementById('openPopupButtonMobile');
+const openPopupButtonImg = document.getElementById('openPopupButtonImg')
 const closePopupButton = document.getElementById('closePopupButton');
 const popupOverlay = document.getElementById('popupOverlay');
 
@@ -100,7 +101,37 @@ openPopupButton.addEventListener('click', function() {
 openPopupButtonImg.addEventListener('click', function() {
   popupOverlay.style.display = 'flex';
 });
+openPopupButtonMobile.addEventListener('click', function() {
+  popupOverlay.style.display = 'flex';
+});
 
 closePopupButton.addEventListener('click', function() {
   popupOverlay.style.display = 'none';
+});
+
+// Валидация формы
+document.addEventListener('DOMContentLoaded', function() {
+  var form = document.getElementById('myForm');
+  var nameInput = document.getElementById('nameInput');
+  var emailInput = document.getElementById('emailInput');
+  var messageInput = document.getElementById('messageInput');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+
+    // Простая валидация на пустые поля
+    if (!nameInput.value.trim() || !emailInput.value.trim() || !messageInput.value.trim()) {
+      alert('Заполните все поля!');
+    } else if (!isValidEmail(emailInput.value)) {
+      alert('Введите корректный Email!');
+    } else {
+      // Ваш код для обработки успешной отправки формы
+      alert('Форма успешно отправлена!');
+    }
+  });
+
+  function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
 });

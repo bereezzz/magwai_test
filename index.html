@@ -28,16 +28,16 @@
   </head>
   <body>
     <header class="header">
-      <nav class="main-menu">
+      <nav class="mainMenu">
         <div class="navbar">
-          <div class="container nav-container">
+          <div class="container navContainer">
               <input class="checkbox" type="checkbox" name="" id="" />
-              <div class="hamburger-lines">
+              <div class="hamburgerLines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
               </div>  
-            <div class="menu-items">
+            <div class="menuItems">
               <li><a href="#">УСЛУГИ</a></li>
               <li><a href="#">АБОНЕМЕНТЫ</a></li>
               <li><a href="#">ОБОРУДОВАНИЕ</a></li>
@@ -140,18 +140,18 @@
 
 
 
-        <ul class="menu-list">
-          <li class="menu-item"><a class="menu-link" href="#">Услуги</a></li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">Абонементы</a>
+        <ul class="menuList">
+          <li class="menuItem"><a class="menuLink" href="#">Услуги</a></li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">Абонементы</a>
           </li>
-          <li class="menu-item"><a class="menu-link" href="#">Почему мы</a></li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">Оборудование</a>
+          <li class="menuItem"><a class="menuLink" href="#">Почему мы</a></li>
+          <li class="menuItem">
+            <a class="menuLink" href="#">Оборудование</a>
           </li>
-          <li class="menu-item"><a class="menu-link" href="#">Акции</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">faq</a></li>
-          <li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
+          <li class="menuItem"><a class="menuLink" href="#">Акции</a></li>
+          <li class="menuItem"><a class="menuLink" href="#">faq</a></li>
+          <li class="menuItem"><a class="menuLink" href="#">Контакты</a></li>
         </ul>
         <div class="phoneBlock">
           <div class="phoneIcon">
@@ -159,7 +159,7 @@
               <path d="M19.5318 20.2139L21.254 18.491C21.486 18.2618 21.7794 18.1049 22.0988 18.0394C22.4182 17.9739 22.7497 18.0025 23.0531 18.1218L25.152 18.9602C25.4586 19.0847 25.7215 19.2972 25.9076 19.5709C26.0937 19.8447 26.1946 20.1674 26.1976 20.4985V24.3442C26.1958 24.5694 26.1485 24.7919 26.0585 24.9983C25.9685 25.2047 25.8377 25.3908 25.6739 25.5453C25.5101 25.6998 25.3168 25.8195 25.1056 25.8973C24.8943 25.9751 24.6695 26.0093 24.4447 25.9979C9.73683 25.0826 6.76912 12.6224 6.20787 7.85368C6.18182 7.6195 6.20562 7.38246 6.27772 7.15814C6.34981 6.93383 6.46857 6.72733 6.62617 6.55223C6.78377 6.37713 6.97664 6.23739 7.1921 6.14222C7.40756 6.04704 7.64072 5.99859 7.87625 6.00003H11.5897C11.9211 6.00101 12.2446 6.10115 12.5186 6.28756C12.7927 6.47397 13.0047 6.73814 13.1274 7.04607L13.9654 9.14584C14.0886 9.44817 14.1201 9.78011 14.0558 10.1002C13.9915 10.4203 13.8344 10.7144 13.6041 10.9456L11.8819 12.6685C11.8819 12.6685 12.8737 19.3832 19.5318 20.2139Z" fill="white"/>
               </svg>
           </div>
-          <div class="buttonPhone" id="openPopupButton">
+          <div class="buttonPhone" id="openPopupButtonMobile">
             <a class="textButtonPhone">Оставить заявку</a>
           </div>
           <div class="parallelogram"></div>
@@ -167,15 +167,14 @@
         <div class="popupOverlay" id="popupOverlay">
           <div class="popup">
             <h2>Форма оценки работы </h2>
-            <form class="form">
-              <input type="text" placeholder="Имя">
-              <input type="email" placeholder="Email">
-              <textarea placeholder="Сообщение"></textarea>
+            <form class="form" id="myForm" novalidate>
+              <input type="text" placeholder="Имя" id="nameInput">
+              <input type="email" placeholder="Email" id="emailInput">
+              <textarea placeholder="Сообщение" id="messageInput"></textarea>
               <div class="blockButton">
                 <button class="closeButton" id="closePopupButton">Закрыть</button>
                 <button type="submit" class="submitButton">Отправить</button>
               </div>
-              
             </form>
            
 
