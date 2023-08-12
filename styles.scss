@@ -3,7 +3,7 @@ $bgColor: #131313;;
 
 body, header, footer {
     background-color: $bgColor;
-  
+    margin: 0;
 }
 *{
     box-sizing: border-box;
@@ -284,8 +284,9 @@ body, header, footer {
     display: flex;
     justify-content: center;
     padding-bottom: 100px;
-    padding-left: 30px;
-    padding-right: 30px;
+}
+#loadMoreButton{
+    width: 300px;
 }
 //  ipad
 @media screen and (min-width: 769px) and (max-width: 1024px)  {

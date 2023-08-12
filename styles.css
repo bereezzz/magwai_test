@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body, header, footer {
-  background-color: #131313; }
+  background-color: #131313;
+  margin: 0; }
 
 * {
   box-sizing: border-box;
@@ -270,9 +271,10 @@ body, header, footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
-  padding-left: 30px;
-  padding-right: 30px; }
+  padding-bottom: 100px; }
+
+#loadMoreButton {
+  width: 300px; }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   /* шапка */
