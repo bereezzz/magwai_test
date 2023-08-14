@@ -62,7 +62,8 @@ function createCardElement(cardData) {
   h4Element.className = "h4Element";
 
   const p1Element = document.createElement("p");
-  p1Element.textContent = cardData.text;
+  p1Element.textContent =
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quam ex, non error vero voluptate illo nihil neque quo temporibus, corrupti, impedit sequi nisi dignissimos incidunt commodi unde cumque distinctio.";
   p1Element.className = "p1Element";
 
   const p2Element = document.createElement("p");
