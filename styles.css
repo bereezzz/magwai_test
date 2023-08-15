@@ -20,7 +20,8 @@ body, header, footer {
 
 .mainMenu {
   display: flex;
-  align-items: center; }
+  align-items: center; 
+  gap: 4px;}
 
 .icon {
   margin-right: 76px; }
